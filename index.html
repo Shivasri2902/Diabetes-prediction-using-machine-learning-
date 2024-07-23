@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diabetes Prediction</title>
+    <link rel="stylesheet" href="\static\styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Diabetes Prediction</h1>
+        <form action="/predict" method="post">
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="">Select Gender</option>
+                <option value="0">Female</option>
+                <option value="1">Male</option>
+            </select>
+            
+            
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required>
+            
+            <label for="hypertension">Hypertension:</label>
+            <select id="hypertension" name="hypertension" required>
+                <option value="">Select hypertension</option>
+                <option value="0">no</option>
+                <option value="1">yes</option>
+            </select>
+           
+            
+            <label for="heart_disease">Heart Disease:</label>
+            <select id="heart_disease" name="heart_disease" required>
+                <option value="">Select heart_disease</option>
+                <option value="0">no</option>
+                <option value="1">yes</option>
+            </select>
+            
+            
+            <label for="smoking_history">Smoking History:</label>
+            <select id="smoking_history" name="smoking_history" required>
+                <option value="">Select smoking_history</option>
+                <option value="0">no</option>
+                <option value="1">never</option>
+                <option value="2">current</option>
+
+            </select>
+            
+            
+            <label for="bmi">BMI:</label>
+            <input type="number" id="bmi" name="bmi" step="0.1" required>
+            
+            <label for="hba1c_level">HbA1c Level:</label>
+            <input type="number" id="hba1c_level" name="hba1c_level" step="0.1" required>
+            
+            <label for="blood_glucose_level">Blood Glucose Level:</label>
+            <input type="number" id="blood_glucose_level" name="blood_glucose_level" step="0.1" required>
+            
+            <button type="submit">Predict</button>
+        </form>
+    </div>
+</body>
+</html>
